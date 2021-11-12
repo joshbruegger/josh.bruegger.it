@@ -1,5 +1,14 @@
 @use '../util' as *;
 
+:root {
+	--spacing-xs: 0.625rem;
+	--spacing-sm: 1.25rem;
+	--spacing-md-sm: 3.125rem;
+	--spacing-md: 5rem;
+	--spacing-lg: 13.125rem;
+	--soacing-xl: 21.25rem;
+}
+
 .container {
 	padding: 0 rem(24);
 	max-width: rem(1110);
