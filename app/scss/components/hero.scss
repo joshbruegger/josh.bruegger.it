@@ -1,1 +1,130 @@
 @use '../util' as *;
+
+.hero{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+    &__text {
+        order: 1;
+
+        margin-top: var(--spacing-md);
+
+        text-transform: uppercase;
+
+        text-align: left;
+        display: inline-block;
+
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+
+        flex-grow: 1;
+
+        h1 {
+            color: var(--pinkish);
+            font-size: 12vw;
+            letter-spacing: 2px;
+            font-family: Allerta;
+            margin: 0;
+        }
+
+        p{
+            margin: 0;
+
+            font-size: 3.7vw;
+
+            font-weight: 100;
+            letter-spacing: 2px;
+        }
+
+
+    }
+
+    &__cta {
+        order: 2;
+
+        display: inline-flex;
+        // justify-content: center;
+        align-items: center;
+
+        flex-grow: 1;
+
+        margin: var(--spacing-sm) 0;
+    }
+
+    &__image {
+        order: 3;
+        height: 60%;
+        width: 100%;
+        background-image: url('/images/me.png');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__scrollcue {
+        position: absolute;
+        // display: inline-block;
+
+        bottom: 80px;
+        left: 50%;
+        transform: translate(0, -50%);
+
+        color: var(--white);
+        letter-spacing: .1em;
+        text-decoration: none;
+        transition: opacity .3s;
+
+
+        span {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 30px;
+            height: 50px;
+            margin-left: -15px;
+            border: 2px solid #fff;
+            border-radius: 50px;
+            box-sizing: border-box;
+
+            &:hover {
+                opacity: .5;
+            }
+
+            &::before {
+                position: absolute;
+                top: 10px;
+                left: 50%;
+                content: '';
+                width: 6px;
+                height: 6px;
+                margin-left: -3px;
+                background-color: #fff;
+                border-radius: 100%;
+                animation: scrollcueanim 3s infinite;
+                box-sizing: border-box;
+            }
+        }
+    }
+}
+
+@keyframes scrollcueanim {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}

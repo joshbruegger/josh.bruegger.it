@@ -19,3 +19,18 @@
 		transform: translate(0, 0);
 	}
 }
+
+// Visibility
+.hide-for-mobile {
+    // hide for tablet and mobile
+    @include breakpoint-down(medium){
+        display: none;
+    }
+}
+
+.hide-for-desktop {
+    // hide for desktop viewport width
+    @include breakpoint(large){
+        display: none;
+    }
+}

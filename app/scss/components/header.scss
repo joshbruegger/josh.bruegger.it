@@ -1,6 +1,11 @@
 @use '../util' as *;
 
 header {
-    margin: var(--spacing-md-sm);
-    text-align: right;
+    padding-top: var(--spacing-md-sm);
+    text-align: center;
+
+    @include breakpoint(large){
+        padding-right: var(--spacing-md-sm);
+        text-align: right;
+    }
 }
