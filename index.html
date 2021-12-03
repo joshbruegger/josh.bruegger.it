@@ -3,7 +3,9 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 		<title>Josh Bruegger | Web design and development</title>
+		<link rel="icon" type="image/x-icon" href="/images/favicon.svg">
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,27 +16,48 @@
 	</head>
 	<body>
 
-		<header class="hide-for-mobile">
-			<a class="button pinkish"href="#">GET IN TOUCH</a>
-		</header>
+		<section class="landing">
 
-		<section class="hero">
-			<div class="hero__text">
-				<h1 class="outlined">
-					Hi! <br>
-					I’m Josh.
-				</h1>
-				<p>
-					WEB DESIGNER & DEVELOPER <br>
-					AI STUDENT
-				</p>
-			</div>
+			<header class="hide-for-mobile">
+				<a class="button button__pinkish"href="#">GET IN TOUCH</a>
+			</header>
 
-			<div class="hero__cta">
-				<a class="button pinkish"href="#">GET IN TOUCH</a>
-			</div>
-			<div class="hero__image"></div>
-			<a href="#about" class="hero__scrollcue"><span></span></a>
+			<section class="hero">
+				<div class="hero__text">
+					<h1 class="outlined">
+						Hi!<br>
+						I’m Josh.
+					</h1>
+					<p>
+						WEB DESIGNER & DEVELOPER<br>
+						AI STUDENT
+					</p>
+				</div>
+
+				<div class="hero__cta hide-for-desktop">
+					<a class="button button__pinkish button__expanding"href="#">GET IN TOUCH</a>
+				</div>
+				<div class="hero__image"></div>
+				<a href="#about" class="hero__scrollcue"><span></span></a>
+
+				<div class="hero__yellowBlob"></div>
+				<div class="hero__redBlob"></div>
+			</section>
+		</section>
+
+		<section class="about" id="about">
+
+			<h2>
+				About me
+			</h2>
+
+			<p>
+				My name is Josh. I learnt web design by procrastinating on my math courses. I’m currently studying for my BSc in Artificial Intelligence at the University of Groningen. Sometimes I make cool websites and cool apps. Sometimes I draw, make music, cook, bake, or play any instrument I can lay my hands on.
+			</p>
+
+			<div class="icons"></div>
+			<a class="button button__yellow"href="#">DOWNLOAD MY CV</a>
+
 		</section>
 	</body>
 </html>

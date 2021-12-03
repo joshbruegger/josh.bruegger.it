@@ -1,0 +1,20 @@
+@use '../util' as *;
+
+.about {
+    background-color: var(--yellow);
+    padding: var(--spacing-md);
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-evenly;
+
+    h2 {
+        border: 1px solid magenta;
+    }
+
+    p {
+        text-align: center;
+        width: clamp(30ch, 50%, 100ch);
+    }
+}

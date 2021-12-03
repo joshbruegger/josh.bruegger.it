@@ -10,24 +10,29 @@ button, .button {
 	border-color: var(--white);
 	border-style: solid;
 	border-width: 3px;
-	border-radius: 15px;
+	border-radius: rem(15);
 
 	padding: 10px 40px;
 	transition: all 0.2s linear;
 
     background: transparent;
 
-	&.pinkish:hover{
+	&__expanding{
+		font-size: 4vw;
+		border-radius: 2.5vw;
+	}
+
+	&__pinkish:hover{
 		color: var(--pinkish);
         background: var(--white);
 	}
 
-	&.red:hover{
+	&__red:hover{
 		color: var(--red);
         background: var(--white);
 	}
 
-	&.yellow:hover{
+	&__yellow:hover{
 		color: var(--yellow);
         background: var(--white);
 	}

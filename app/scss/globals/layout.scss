@@ -24,13 +24,13 @@
 .hide-for-mobile {
     // hide for tablet and mobile
     @include breakpoint-down(medium){
-        display: none;
+        display: none !important;
     }
 }
 
 .hide-for-desktop {
     // hide for desktop viewport width
     @include breakpoint(large){
-        display: none;
+        display: none !important;
     }
 }
