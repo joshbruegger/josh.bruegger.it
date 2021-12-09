@@ -1,26 +1,23 @@
-@use '../util' as *;
+@use "../util" as *;
 
 h1,
 h2,
 h3 {
-	margin-top: 0;
-	line-height: 1.1;
+  margin: 0;
+  line-height: 1.1;
 }
 
 a,
 a:visited,
 a:active {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .outlined {
-	text-shadow:
-            -1px -1px 0 var(--white),
-            0px -1px 0 var(--white),
-            1px -1px 0 var(--white),
-            -1px 1px 0 var(--white),
-            0px 1px 0 var(--white),
-            1px 1px 0 var(--white),
-            2px 0 0 var(--white),
-            -2px 0 0 var(--white);
+  letter-spacing: 2px;
+  font-family: Allerta;
+
+  text-shadow: -1px -1px 0 var(--white), 0px -1px 0 var(--white),
+    1px -1px 0 var(--white), -1px 1px 0 var(--white), 0px 1px 0 var(--white),
+    1px 1px 0 var(--white), 2px 0 0 var(--white), -2px 0 0 var(--white);
 }

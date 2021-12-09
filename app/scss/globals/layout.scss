@@ -1,36 +1,36 @@
-@use '../util' as *;
+@use "../util" as *;
 
 :root {
-	--spacing-xs: 0.625rem;
-	--spacing-sm: 1.25rem;
-	--spacing-md-sm: 3.125rem;
-	--spacing-md: 5rem;
-	--spacing-lg: 13.125rem;
-	--soacing-xl: 21.25rem;
+  --spacing-xs: 0.625rem;
+  --spacing-sm: 1.25rem;
+  --spacing-md-sm: 3.125rem;
+  --spacing-md: 5rem;
+  --spacing-lg: 13.125rem;
+  --soacing-xl: 21.25rem;
 }
 
 .container {
-	padding: 0 rem(24);
-	max-width: rem(1110);
-	margin: 0 auto;
+  padding: 0 rem(24);
+  max-width: rem(1110);
+  margin: 0 auto;
 
-	@include breakpoint(large) {
-		padding: 0;
-		transform: translate(0, 0);
-	}
+  @include breakpoint(large) {
+    padding: 0;
+    transform: translate(0, 0);
+  }
 }
 
 // Visibility
 .hide-for-mobile {
-    // hide for tablet and mobile
-    @include breakpoint-down(medium){
-        display: none !important;
-    }
+  // hide for tablet and mobile
+  @include breakpoint-down(medium) {
+    display: none !important;
+  }
 }
 
 .hide-for-desktop {
-    // hide for desktop viewport width
-    @include breakpoint(large){
-        display: none !important;
-    }
+  // hide for desktop viewport width
+  @include breakpoint(large) {
+    display: none !important;
+  }
 }

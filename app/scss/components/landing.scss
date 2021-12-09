@@ -1,15 +1,15 @@
-@use '../util' as *;
+@use "../util" as *;
 
-.landing{
-    height:100vh;
-    display: flex;
-    flex-direction: column;
+.landing {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 
-    header{
-      flex-grow: 1;
-    }
-
-    .hero{
-      flex-grow: 10;
-    }
+  header {
+    flex-grow: 1;
   }
+
+  .hero {
+    flex-grow: 10;
+  }
+}

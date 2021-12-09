@@ -1,13 +1,13 @@
-@use '../util' as *;
+@use "../util" as *;
 
-.hero{
+.hero {
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
 
-  @include breakpoint(large){
+  @include breakpoint(large) {
     align-items: flex-start;
   }
 
@@ -30,28 +30,26 @@
     h1 {
       color: var(--pinkish);
       font-size: 12vw;
-      letter-spacing: 2px;
-      font-family: Allerta;
       margin: 0;
     }
 
-    p{
+    p {
       margin: 0;
       font-size: 3.7vw;
       font-weight: 100;
       letter-spacing: 2px;
     }
 
-    @include breakpoint(medium){
+    @include breakpoint(medium) {
       h1 {
         font-size: 8vw;
       }
-      p{
+      p {
         font-size: 2.5vw;
       }
     }
 
-    @include breakpoint(large){
+    @include breakpoint(large) {
       margin-left: 10vw;
       justify-content: start;
       h1 {
@@ -61,7 +59,6 @@
         font-size: 1.5vw;
       }
     }
-
   }
 
   &__cta {
@@ -76,17 +73,17 @@
     order: 3;
     height: 36%;
     width: 100%;
-    background-image: url('/images/hero_mobile.png');
+    background-image: url("/images/hero_mobile.png");
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
 
-    @include breakpoint(medium){
+    @include breakpoint(medium) {
       height: 60%;
     }
 
-    @include breakpoint(large){
-      background-image: url('/images/hero.png');
+    @include breakpoint(large) {
+      background-image: url("/images/hero.png");
       background-size: contain;
       background-position: bottom right;
       position: absolute;
@@ -96,7 +93,7 @@
   }
 
   &__yellowBlob {
-    background-image: url('/images/blob_yellow.svg');
+    background-image: url("/images/blob_yellow.svg");
     background-repeat: no-repeat;
     position: absolute;
     z-index: -1;
@@ -106,12 +103,12 @@
     bottom: 0;
     background-size: contain;
 
-    @include breakpoint(medium){
+    @include breakpoint(medium) {
       height: calc(50vh - 5vw);
       bottom: -10vw;
     }
 
-    @include breakpoint(large){
+    @include breakpoint(large) {
       height: 50%;
       background-position: 90%;
       bottom: 13%;
@@ -119,7 +116,7 @@
   }
 
   &__redBlob {
-    background-image: url('/images/blob_red.svg');
+    background-image: url("/images/blob_red.svg");
     background-repeat: no-repeat;
     position: absolute;
     z-index: -1;
@@ -129,19 +126,18 @@
     bottom: 0;
     background-size: contain;
 
-    @include breakpoint(medium){
+    @include breakpoint(medium) {
       height: calc(50vh - 5vw);
       background-position: 10%;
       bottom: -10vw;
     }
 
-    @include breakpoint(large){
+    @include breakpoint(large) {
       height: 50%;
       background-position: calc(85%-55vh);
       bottom: 13%;
     }
   }
-
 
   &__scrollcue {
     position: absolute;
@@ -167,7 +163,7 @@
 
       &:hover {
         background-color: var(--white);
-        &::before{
+        &::before {
           background-color: var(--pinkish);
         }
       }
@@ -176,7 +172,7 @@
         position: absolute;
         top: 10px;
         left: 50%;
-        content: '';
+        content: "";
         width: 6px;
         height: 6px;
         margin-left: -3px;
@@ -187,7 +183,7 @@
       }
     }
 
-    @include breakpoint(large){
+    @include breakpoint(large) {
       left: 20%;
     }
   }

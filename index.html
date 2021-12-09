@@ -1,63 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<title>Josh Bruegger | Web design and development</title>
-		<link rel="icon" type="image/x-icon" href="/images/favicon.svg">
+    <title>Josh Bruegger | Web design and development</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.svg" />
 
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Allerta&family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allerta&family=Roboto:wght@100;400;500&display=swap"
+      rel="stylesheet"
+    />
 
-		<link rel="stylesheet" href="/dist/style.css" />
-		<script defer src="/dist/script.js"></script>
-	</head>
-	<body>
+    <link rel="stylesheet" href="/dist/style.css" />
+    <script defer src="/dist/script.js"></script>
+  </head>
+  <body>
+    <section class="landing">
+      <header class="hide-for-mobile">
+        <a class="button button__pinkish" href="#">GET IN TOUCH</a>
+      </header>
 
-		<section class="landing">
+      <section class="hero">
+        <div class="hero__text">
+          <h1 class="outlined">
+            Hi!<br />
+            I’m Josh.
+          </h1>
+          <p>
+            WEB DESIGNER & DEVELOPER<br />
+            AI STUDENT
+          </p>
+        </div>
 
-			<header class="hide-for-mobile">
-				<a class="button button__pinkish"href="#">GET IN TOUCH</a>
-			</header>
+        <div class="hero__cta hide-for-desktop">
+          <a class="button button__pinkish button__expanding" href="#"
+            >GET IN TOUCH</a
+          >
+        </div>
+        <div class="hero__image"></div>
+        <a href="#about" class="hero__scrollcue"><span></span></a>
 
-			<section class="hero">
-				<div class="hero__text">
-					<h1 class="outlined">
-						Hi!<br>
-						I’m Josh.
-					</h1>
-					<p>
-						WEB DESIGNER & DEVELOPER<br>
-						AI STUDENT
-					</p>
-				</div>
+        <div class="hero__yellowBlob"></div>
+        <div class="hero__redBlob"></div>
+      </section>
+    </section>
 
-				<div class="hero__cta hide-for-desktop">
-					<a class="button button__pinkish button__expanding"href="#">GET IN TOUCH</a>
-				</div>
-				<div class="hero__image"></div>
-				<a href="#about" class="hero__scrollcue"><span></span></a>
+    <section class="about" id="about">
+      <h2>About me</h2>
 
-				<div class="hero__yellowBlob"></div>
-				<div class="hero__redBlob"></div>
-			</section>
-		</section>
+      <p>
+        My name is Josh. I learnt web design by procrastinating on my math
+        courses. I’m currently studying for my BSc in Artificial Intelligence at
+        the University of Groningen. Sometimes I make cool websites and cool
+        apps. Sometimes I draw, make music, cook, bake, or play any instrument I
+        can lay my hands on.
+      </p>
 
-		<section class="about" id="about">
+      <p class="prompt">Want to know more?</p>
+      <a class="button button__yellow" href="#">DOWNLOAD MY CV</a>
+    </section>
 
-			<h2>
-				About me
-			</h2>
+    <section class="cta">
+      <h1 class="outlined">
+        INTERESTED IN<br />
+        WORKING TOGETHER?
+      </h1>
 
-			<p>
-				My name is Josh. I learnt web design by procrastinating on my math courses. I’m currently studying for my BSc in Artificial Intelligence at the University of Groningen. Sometimes I make cool websites and cool apps. Sometimes I draw, make music, cook, bake, or play any instrument I can lay my hands on.
-			</p>
+      <a class="button button__red" href="#">GET IN TOUCH</a>
+    </section>
 
-			<div class="icons"></div>
-			<a class="button button__yellow"href="#">DOWNLOAD MY CV</a>
-
-		</section>
-	</body>
+    <section></section>
+  </body>
 </html>

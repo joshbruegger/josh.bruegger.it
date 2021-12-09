@@ -1,11 +1,11 @@
-@use '../util' as *;
+@use "../util" as *;
 
 header {
-    padding-top: var(--spacing-md-sm);
-    text-align: center;
+  padding-top: var(--spacing-md-sm);
+  text-align: center;
 
-    @include breakpoint(large){
-        padding-right: var(--spacing-md-sm);
-        text-align: right;
-    }
+  @include breakpoint(large) {
+    padding-right: var(--spacing-md-sm);
+    text-align: right;
+  }
 }

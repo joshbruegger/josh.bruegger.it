@@ -1,20 +1,39 @@
-@use '../util' as *;
+@use "../util" as *;
 
 .about {
-    background-color: var(--yellow);
-    padding: var(--spacing-md);
-    display: flex;
-    flex-direction: column;
+  background-color: var(--yellow);
+  padding: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
 
-    align-items: center;
-    justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-evenly;
 
-    h2 {
-        border: 1px solid magenta;
+  h2 {
+    margin-bottom: var(--spacing-sm);
+    width: 100%;
+    height: calc(var(--font-xl) * 3);
+
+    background-image: url("/images/blob_title.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: calc(50% + 5px) 50%;
+
+    line-height: calc(var(--font-lg) * 3 + 5px);
+    font-size: var(--font-md);
+    font-family: Allerta;
+    color: var(--white);
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  p {
+    text-align: center;
+    width: clamp(30ch, 50%, 100ch);
+    margin-bottom: var(--spacing-md-sm);
+
+    &.prompt {
+      margin-bottom: var(--spacing-sm);
     }
-
-    p {
-        text-align: center;
-        width: clamp(30ch, 50%, 100ch);
-    }
+  }
 }

@@ -1,39 +1,40 @@
-@use '../util' as *;
+@use "../util" as *;
 
-button, .button {
-	display: inline-block;
-	cursor: pointer;
-	color: var(--white);
-	font-size: var(--font-md);
-	font-weight: 500;
+button,
+.button {
+  display: inline-block;
+  cursor: pointer;
+  color: var(--white);
+  font-size: var(--font-md);
+  font-weight: 500;
 
-	border-color: var(--white);
-	border-style: solid;
-	border-width: 3px;
-	border-radius: rem(15);
+  border-color: var(--white);
+  border-style: solid;
+  border-width: 3px;
+  border-radius: rem(15);
 
-	padding: 10px 40px;
-	transition: all 0.2s linear;
+  padding: 10px 40px;
+  transition: all 0.2s linear;
 
-    background: transparent;
+  background: transparent;
 
-	&__expanding{
-		font-size: 4vw;
-		border-radius: 2.5vw;
-	}
+  &__expanding {
+    font-size: 4vw;
+    border-radius: 2.5vw;
+  }
 
-	&__pinkish:hover{
-		color: var(--pinkish);
-        background: var(--white);
-	}
+  &__pinkish:hover {
+    color: var(--pinkish);
+    background: var(--white);
+  }
 
-	&__red:hover{
-		color: var(--red);
-        background: var(--white);
-	}
+  &__red:hover {
+    color: var(--red);
+    background: var(--white);
+  }
 
-	&__yellow:hover{
-		color: var(--yellow);
-        background: var(--white);
-	}
+  &__yellow:hover {
+    color: var(--yellow);
+    background: var(--white);
+  }
 }
